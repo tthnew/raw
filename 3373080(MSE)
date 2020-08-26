@@ -1,0 +1,7 @@
+Link: https://math.stackexchange.com/questions/3373080/given-three-positive-numbers-a-b-c-prove-that-sum-limits-sym-fracabc/3804487#3804487
+
+f := ((a+b)/c+(b+c)/a+(c+a)/b)^2-(4*(a+b+c))*(a/(b*c)+b/(c*a)+c/(a*b));
+
+F := 2*(a*b-2*a*c+b*c)^2/((a^2+c^2)*b^2)+2*(a-c)^2*(2*b*a^2+a*b*c+2*b*c^2-a*c*(c+a))^2/((a^2+c^2)*(a^2+b^2+c^2)*c^2*a^2)+(a-b)^2*(b-c)^2*(c-a)^2*(a^2+4*b*c+b^2+4*a*c+c^2+4*a*b)/((a^2+b^2+c^2)*a^2*b^2*c^2);
+
+factor(f-F)
